@@ -181,7 +181,7 @@ a {
 }
 .box_logo{
 	width: 100%; 
-	height: 25rem;
+	height: 10rem;
 	margin-top: 2rem;
 	position: relative;
 }
@@ -190,7 +190,7 @@ a {
   position: absolute;
   right: -2rem;
   top:2rem;
-  width:20%;
+  width:24%;
   height: 4rem;
   background-color: #205050;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -201,7 +201,7 @@ a {
   position: absolute;
   right: -2rem;
   top:2rem;
-  width:40%;
+  width:33%;
   height: 4rem;
   background-color: #323333;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -227,7 +227,8 @@ a {
 	position: absolute;
 	width: 0;
 	height: 0;
-	bottom:-3.5rem;
+    left:0rem;
+	bottom:-4rem;
 	border-left: 20px solid transparent;
 	border-right: 30px solid transparent;
 	border-bottom: 100px solid #205050;
