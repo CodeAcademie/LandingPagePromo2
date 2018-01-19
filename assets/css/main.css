@@ -25,13 +25,13 @@ nav{
 
 #main {
   display: grid;
+  grid-row-gap: 6rem;
   grid-template-columns: repeat(4, 1fr);
   padding: 2rem 4rem;
   text-align: center;
 }
 
 .apprenant {
-  width: 100%;
 	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
