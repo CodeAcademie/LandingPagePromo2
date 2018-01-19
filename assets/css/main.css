@@ -1,9 +1,15 @@
+*{
+  padding:0;
+  margin:0;
+}
+
 body{
   background-image: url(../img/round.png);
   background-repeat: repeat;
 }
 
 nav{
-	height: 4rem;
-	width:10%;
+  height: 3rem;
+  width:100%;
+  background-color: #00959A;
 }
