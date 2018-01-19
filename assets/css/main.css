@@ -34,3 +34,62 @@ nav{
   height: 2.5rem;
 }
 
+footer{
+  position:relative;
+  overflow: hidden;
+  width:100%; 
+  height: 10rem;
+ /* background-color: red;*/
+  bottom:10rem;
+}
+
+.green_rect{
+  z-index: 9;
+  left:-.5rem;
+  transform: rotate(4.5deg);
+  position: absolute;
+  width:110%;
+  height: 4rem;
+  background-color: #00959A;
+  bottom:1.2rem;
+}
+
+.green_dark_rect{
+  z-index: 8;
+  transform: rotate(-1.5deg);
+  position: absolute;
+  left:-.5rem;
+  width:120%;
+  height: 4.5rem;
+  background-color: #205050;
+  bottom:1rem;
+}
+
+.dark_rect{
+  z-index: 6;
+  left:-.5rem;
+  transform: rotate(-5deg);
+  position: absolute;
+  width:110%;
+  height: 4rem;
+  background-color: #323333;
+  bottom:1.2rem;
+
+}
+
+.bottom_dark_rect{
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width:120%;
+  height: 1rem;
+  background-color: #323333;
+}
+.background_green_dark_rect{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height: 4.6rem;
+  background-color: #205050;
+}
+
