@@ -206,7 +206,7 @@ const arrayApprenant = [
 		desc:'',
 		love:'',
 	},
-	
+
 ];
 
 function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
@@ -216,4 +216,11 @@ function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
 	this.cvUrl = cvUrl
 	this.portfolioUrl = porfolioUrl
 	this.desc = desc
+}
+
+
+function populateTheDom() {
+	arrayApprenant.forEach(
+		
+	);
 }
