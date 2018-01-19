@@ -218,12 +218,57 @@ function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
 	this.desc = desc
 }
 
-function randomApprenantSort() {
-	return
+mainElement = document.getElementByTagName('main');
+
+function randomApprenantSort(array) {
+	// TODO Sorting the arrayApprenant
+	return array
 }
 
-function populateTheDom() {
-	arrayApprenant.forEach(function(apprenant){
+function populateTheDom(array) {
+	randomApprenantSort(array);
+	array.forEach(function(apprenant){
 
+		let apprenantElement = document.createElement('div')
+		apprenantElement.classList.add('apprenant')
+
+		let photoElement = document.createElement('div')
+		photoElement.classList.add('photo')
+		let photoImg = document.createElement('img')
+		photoImg.src = apprenant.photoUrl
+		photoElement.appendChild(photoImg)
+		apprenantElement.appendChild(photoElement)
+
+		let nameElement = document.createElement('div')
+		nameElement.classList.add('name')
+		nameElement.innerHTML = apprenant.firstname +' '+ apprenant.lastname
+		apprenantElement.appendChild(nameElement)
+
+		let portfolioElement = document.createElement('div')
+		portfolioElement.classList.add('portfolio')
+		let portfolioLink = document.createElement('a')
+		portfolioLink.innerHTML = 'Portfolio'
+		portfolioLink.href = apprenant.portfolioUrl
+		portfolioElement.appendChild(portfolioLink)
+		apprenantElement.appendChild(portfolioElement)
+
+		let cvElement = document.createElement('div')
+		cvElement.classList.add('cv')
+		let cvLink = document.createElement('a')
+		cvLink.innerHTML = 'CV'
+		cvLink.href = apprenant.cvUrl
+		cvElement.appendChild(cvLink)
+		apprenantElement.appendChild(cvElement)
+
+		let loveElement = document.createElement('div')
+		loveElement.innerHTML = apprenant.love
+		apprenantElement.appendChild(loveElement)
+
+		let descElement = document.createElement('div')
+		descElement.classList.add('desc')
+		descElement.innerHTML = apprenant.desc
+		apprenantElement.appendChild(descElement)
+
+		mainElement.appendChild(apprenantElement)
 	});
 }
