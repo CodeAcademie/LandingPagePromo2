@@ -7,3 +7,68 @@ nav{
 	height: 4rem;
 	width:10%;
 }
+
+.apprenant {
+	display: inline-flex;
+	flex-direction: column;
+	max-width: 11em;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.photo {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 100%;
+	overflow: hidden;
+	border: 2px solid #024345;
+	margin: 1em auto;
+}
+
+.photo > img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.name, .portfolio, .cv, .love {
+	background-color: #00959A;
+	height: 2rem;
+	border-radius: .3rem;
+	margin: .3em 0;
+	font-size: 1em;
+	line-height: 2rem;
+	color: white;
+	font-family: sans-serif;
+	box-shadow: 2px 2px 6px #a8a8a8;
+	padding-right: .5em;
+	font-family: 'Roboto', sans-serif;
+	transition: .4s;
+}
+
+.name::before, .portfolio::before, .cv::before, .love::before {
+	background-color: #024345;
+	width: 1rem;
+	height: 2rem;
+	content: '';
+	float: left;
+	margin-right: .5em;
+}
+
+.portfolio:hover, .cv:hover {
+	background-color: #F4A733;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+.desc {
+	display: none;
+	transition: .4s;
+}
+
+.photo:hover ~ .desc {
+	display: block;
+}
