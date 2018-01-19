@@ -26,7 +26,6 @@ nav{
 .apprenant {
 	display: inline-flex;
 	flex-direction: column;
-	max-width: 11em;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
