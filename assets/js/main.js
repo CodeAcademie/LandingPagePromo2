@@ -208,25 +208,37 @@ const arrayApprenant = [
 	},
 ];
 
-function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
-	this.firstname = firstname
-	this.lastname = lastname
-	this.photoUrl = photoUrl
-	this.cvUrl = cvUrl
-	this.portfolioUrl = porfolioUrl
-	this.desc = desc
-}
+// function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
+// 	this.firstname = firstname
+// 	this.lastname = lastname
+// 	this.photoUrl = photoUrl
+// 	this.cvUrl = cvUrl
+// 	this.portfolioUrl = porfolioUrl
+// 	this.desc = desc
+// }
 
-mainElement = document.getElementById('main');
-lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+let mainElement = document.getElementById('main');
+let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
-function randomApprenantSort(array) {
-	// TODO Sorting the arrayApprenant
-	return array
+function shuffle(array) {
+  var currentIndex = array.length,
+			temporaryValue,
+			randomIndex;
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
 }
 
 function populateTheDom(array) {
-	array = randomApprenantSort(array);
+	array = shuffle(array);
 	let i = 0;
 	array.forEach(function(apprenant){
 
