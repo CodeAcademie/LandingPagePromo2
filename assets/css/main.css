@@ -9,6 +9,8 @@ body{
 }
 
 nav{
+  display: flex;
+  justify-content: space-between;
   height: 2.5rem;
   width:100%;
   background-color: #00959A;
@@ -16,10 +18,27 @@ nav{
 }
 
 .white_rectangle_nav{
+  display: inline-block;
   width:12rem;
   height: 2.5rem;
   background-color: white;
 }
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 1rem;
+  color: white;
+}
+
+.button:hover {
+  cursor: default;
+}
+
 .white_rectangle_nav:after {
   position: absolute;
   content: " ";
@@ -33,4 +52,3 @@ nav{
   margin-left: 1.5rem;
   height: 2.5rem;
 }
-

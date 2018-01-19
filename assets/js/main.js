@@ -240,6 +240,12 @@ function shuffle(array) {
 function populateTheDom(array) {
 	array = shuffle(array);
 	let i = 0;
+
+	// Remove all child nodes in <main>
+	while (mainElement.lastChild) {
+		mainElement.removeChild(mainElement.lastChild)
+	}
+
 	array.forEach(function(apprenant){
 
 		let apprenantElement = document.createElement('div')
