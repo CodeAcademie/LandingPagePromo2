@@ -251,9 +251,12 @@ function populateTheDom(array) {
 	}
 
 	array.forEach(function(apprenant){
+		let apprenantWrapper = document.createElement('div')
+		apprenantWrapper.classList.add('apprenant-wrapper')
 
 		let apprenantElement = document.createElement('div')
 		apprenantElement.classList.add('apprenant')
+		apprenantWrapper.appendChild(apprenantElement)
 
 		let photoElement = document.createElement('div')
 		photoElement.classList.add('photo')
@@ -293,7 +296,7 @@ function populateTheDom(array) {
 		descElement.innerHTML = apprenant.desc || lorem
 		apprenantElement.appendChild(descElement)
 
-		mainElement.appendChild(apprenantElement)
+		mainElement.appendChild(apprenantWrapper)
 	});
 }
 populateTheDom(arrayApprenant)
