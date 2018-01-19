@@ -1,4 +1,9 @@
 body{
-  background-image: url(assets/img/round.png);
+  background-image: url(../img/round.png);
   background-repeat: repeat;
+}
+
+nav{
+	height: 4rem;
+	width:10%;
 }
