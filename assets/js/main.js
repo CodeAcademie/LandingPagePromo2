@@ -206,7 +206,6 @@ const arrayApprenant = [
 		desc:'',
 		love:'',
 	},
-
 ];
 
 function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
@@ -218,7 +217,8 @@ function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
 	this.desc = desc
 }
 
-mainElement = document.getElementByTagName('main');
+mainElement = document.getElementById('main');
+lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
 function randomApprenantSort(array) {
 	// TODO Sorting the arrayApprenant
@@ -226,7 +226,8 @@ function randomApprenantSort(array) {
 }
 
 function populateTheDom(array) {
-	randomApprenantSort(array);
+	array = randomApprenantSort(array);
+	let i = 0;
 	array.forEach(function(apprenant){
 
 		let apprenantElement = document.createElement('div')
@@ -235,7 +236,7 @@ function populateTheDom(array) {
 		let photoElement = document.createElement('div')
 		photoElement.classList.add('photo')
 		let photoImg = document.createElement('img')
-		photoImg.src = apprenant.photoUrl
+		photoImg.src = apprenant.photoUrl || 'https://lorempixel.com/640/400/people/' + i
 		photoElement.appendChild(photoImg)
 		apprenantElement.appendChild(photoElement)
 
@@ -261,14 +262,16 @@ function populateTheDom(array) {
 		apprenantElement.appendChild(cvElement)
 
 		let loveElement = document.createElement('div')
-		loveElement.innerHTML = apprenant.love
+		loveElement.innerHTML = apprenant.love || '<3 Code Académie <3'
 		apprenantElement.appendChild(loveElement)
 
 		let descElement = document.createElement('div')
 		descElement.classList.add('desc')
-		descElement.innerHTML = apprenant.desc
+		descElement.innerHTML = apprenant.desc || lorem
 		apprenantElement.appendChild(descElement)
 
 		mainElement.appendChild(apprenantElement)
+		i > 9 ? i = 0 : i++;
 	});
 }
+populateTheDom(arrayApprenant)
