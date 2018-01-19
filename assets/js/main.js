@@ -217,8 +217,14 @@ const arrayApprenant = [
 // 	this.desc = desc
 // }
 
+let randomButton = document.getElementById('random')
+let promotionButton = document.getElementById('promotion')
 let mainElement = document.getElementById('main');
 let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+randomButton.onclick = function(){
+	populateTheDom(arrayApprenant)
+}
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -239,8 +245,6 @@ function shuffle(array) {
 
 function populateTheDom(array) {
 	array = shuffle(array);
-	let i = 0;
-
 	// Remove all child nodes in <main>
 	while (mainElement.lastChild) {
 		mainElement.removeChild(mainElement.lastChild)
@@ -254,7 +258,7 @@ function populateTheDom(array) {
 		let photoElement = document.createElement('div')
 		photoElement.classList.add('photo')
 		let photoImg = document.createElement('img')
-		photoImg.src = apprenant.photoUrl || 'https://lorempixel.com/640/400/people/' + i
+		photoImg.src = apprenant.photoUrl || 'https://lorempixel.com/640/400/people/' + Math.floor(Math.random()*10)
 		photoElement.appendChild(photoImg)
 		apprenantElement.appendChild(photoElement)
 
@@ -289,7 +293,6 @@ function populateTheDom(array) {
 		apprenantElement.appendChild(descElement)
 
 		mainElement.appendChild(apprenantElement)
-		i > 9 ? i = 0 : i++;
 	});
 }
 populateTheDom(arrayApprenant)

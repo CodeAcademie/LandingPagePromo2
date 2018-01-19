@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Regular.ttf')
+}
+
 *{
   padding:0;
   margin:0;
+  font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -57,7 +63,7 @@ nav{
 footer{
   position:relative;
   overflow: hidden;
-  width:100%; 
+  width:100%;
   height: 10rem;
   bottom:0rem;
 }
