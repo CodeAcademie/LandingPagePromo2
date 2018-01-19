@@ -218,9 +218,12 @@ function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
 	this.desc = desc
 }
 
+function randomApprenantSort() {
+	return
+}
 
 function populateTheDom() {
-	arrayApprenant.forEach(
-		
-	);
+	arrayApprenant.forEach(function(apprenant){
+
+	});
 }
