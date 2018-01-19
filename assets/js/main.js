@@ -284,6 +284,7 @@ function populateTheDom(array) {
 		apprenantElement.appendChild(cvElement)
 
 		let loveElement = document.createElement('div')
+		loveElement.classList.add('love')
 		loveElement.innerHTML = apprenant.love || '<3 Code Académie <3'
 		apprenantElement.appendChild(loveElement)
 
