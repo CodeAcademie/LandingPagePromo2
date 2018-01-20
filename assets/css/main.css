@@ -16,7 +16,10 @@ body{
 }
 
 nav{
-	display: flex;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
   justify-content: space-between;
   height: 2.5rem;
   width:100%;
@@ -161,7 +164,7 @@ a {
 .box_header{
 	width: 100%; 
 	height: 25rem;
-	margin-top: 2rem;
+	margin-top:5rem;
 	position: relative;
 }
 .image_header{
