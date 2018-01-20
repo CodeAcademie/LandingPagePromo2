@@ -227,7 +227,7 @@ randomButton.onclick = function(){
 }
 
 function shuffle(array) {
-  var currentIndex = array.length,
+  let currentIndex = array.length,
 			temporaryValue,
 			randomIndex;
   // While there remain elements to shuffle...
@@ -267,7 +267,7 @@ function populateTheDom(array) {
 
 		let nameElement = document.createElement('div')
 		nameElement.classList.add('name')
-		nameElement.innerHTML = apprenant.firstname +' '+ apprenant.lastname
+		nameElement.innerHTML = apprenant.firstname +' '+ apprenant.lastname.toUpperCase()
 		apprenantElement.appendChild(nameElement)
 
 		let portfolioElement = document.createElement('div')
