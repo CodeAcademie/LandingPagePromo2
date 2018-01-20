@@ -1,23 +1,27 @@
+/*------------------ General ----------------------*/
 @font-face {
   font-family: "Roboto";
   src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
-*{
+* {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
   background-image: url(../img/round.png);
   background-repeat: repeat;
   overflow-x:hidden;
 }
-html{
+
+html {
 	overflow-x:hidden;
 }
-nav{
+
+/*------------------ Header ----------------------*/
+nav {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -29,6 +33,132 @@ nav{
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 0 22px 0 rgba(0, 0, 0, 0.6);
 }
 
+.white_rectangle_nav {
+  display: inline-block;
+  width:12rem;
+  height: 2.5rem;
+  background-color: white;
+}
+
+.white_rectangle_nav:after {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-top: 2.5rem solid white;
+  border-right: 2.5rem solid transparent;
+  padding-left:6.6rem;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 1rem;
+  color: white;
+}
+
+.button:hover {
+  cursor: default;
+}
+
+.logo {
+  margin-left: .9rem;
+  height: 2.5rem;
+}
+
+.photopromo {
+	margin-top:2rem;
+  vertical-align:middle;
+}
+
+.box_header {
+	width: 100%;
+	height: 25rem;
+	margin-top:5rem;
+	position: relative;
+}
+
+.image_header {
+  max-height: 100%;
+  max-width: 90%;
+  min-width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.logo_header {
+  margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+.box_logo {
+	width: 100%;
+	height: 10rem;
+	margin-top: 2rem;
+	position: relative;
+}
+
+.dark_rect_date {
+  transform: rotate(0deg);
+  position: absolute;
+  right: -2rem;
+  top: 2rem;
+  width: 24%;
+  height: 4rem;
+  background-color: #205050;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  bottom: 1.2rem;
+}
+
+.black_rect_date {
+  transform: rotate(5deg);
+  position: absolute;
+  right: -2rem;
+  top:2rem;
+  width:33%;
+  height: 4rem;
+  background-color: #323333;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  bottom:1.2rem;
+}
+
+.rect_date{
+	padding-left: 2rem;
+	color: white;
+	font-size: 3rem;
+  transform: rotate(-5deg);
+  position: absolute;
+  right: -2rem;
+  top: 2rem;
+  width: 45%;
+  height: 4rem;
+  background-color: #00959A;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  bottom: 1.2rem;
+}
+
+.rect_date::after{
+	transform: rotate(110deg);
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: 0rem;
+	bottom: -4rem;
+	border-left: 20px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 100px solid #205050;
+}
+
+/*------------------ Main ----------------------*/
 #main {
   display: grid;
   grid-row-gap: 6rem;
@@ -87,7 +217,6 @@ nav{
 }
 
 a {
-	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 	color: white;
 }
@@ -101,146 +230,21 @@ a {
 	display: block;
 }
 
-.white_rectangle_nav{
-  display: inline-block;
-  width:12rem;
-  height: 2.5rem;
-  background-color: white;
-}
-
-.white_rectangle_nav:after {
-  position: absolute;
-  content: " ";
-  width: 0;
-  height: 0;
-  border-top: 2.5rem solid white;
-  border-right: 2.5rem solid transparent;
-  padding-left:6.6rem;
-}
-
-
-.button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  display: inline-block;
-  margin: 1rem;
-  color: white;
-}
-
-.button:hover {
-  cursor: default;
-}
-
-
-.logo{
-  margin-left: .9rem;
-  height: 2.5rem;
-}
-
-.photopromo{
-	margin-top:2rem;
-    vertical-align:middle;
-	
-}
-
-.box_header{
-	width: 100%; 
-
-	height: 25rem;
-	margin-top:5rem;
-	position: relative;
-}
-.image_header{
-  max-height: 100%;
-  max-width: 90%;
-  min-width: 30%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.logo_header{
-	margin-left: 2rem;
-	margin-top: 2rem;
-}
-.box_logo{
-	width: 100%; 
-	height: 10rem;
-	margin-top: 2rem;
-	position: relative;
-}
-.dark_rect_date{
-  transform: rotate(0deg);
-  position: absolute;
-  right: -2rem;
-  top:2rem;
-  width:24%;
-  height: 4rem;
-  background-color: #205050;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  bottom:1.2rem;
-}
-.black_rect_date{
-  transform: rotate(5deg);
-  position: absolute;
-  right: -2rem;
-  top:2rem;
-  width:33%;
-  height: 4rem;
-  background-color: #323333;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  bottom:1.2rem;
-}
-.rect_date{
-	padding-left: 2rem;
-	color:white;
-	font-size: 3rem;
-  transform: rotate(-5deg);
-  position: absolute;
-  right: -2rem;
-  top:2rem;
-  width:45%;
-  height: 4rem;
-  background-color: #00959A;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  bottom:1.2rem;
-}
-.rect_date::after{
-	transform: rotate(110deg);
-	content: "";
-	position: absolute;
-	width: 0;
-	height: 0;
-    left:0rem;
-	bottom:-4rem;
-	border-left: 20px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 100px solid #205050;
-	
-  
-}
 /*----------------------Footer---------------------*/
-
-footer{
-  position:relative;
+footer {
+  position: relative;
   overflow: hidden;
-  width:100%;
+  width: 100%;
   height: 10rem;
-  bottom:0rem;
+  bottom: 0rem;
 }
 
-.green_rect{
+.green_rect {
   z-index: 9;
-  left:-.5rem;
+  left: -.5rem;
   transform: rotate(4.5deg);
   position: absolute;
-  width:110%;
+  width: 110%;
   height: 4rem;
   background-color: #00959A;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -251,54 +255,52 @@ footer{
   z-index: 8;
   transform: rotate(-1.5deg);
   position: absolute;
-  left:-.5rem;
-  width:120%;
+  left: -.5rem;
+  width: 120%;
   height: 4.5rem;
   background-color: #205050;
-  bottom:1rem;
+  bottom: 1rem;
 }
 
-.dark_rect{
+.dark_rect {
   z-index: 6;
-  left:-.5rem;
+  left: -.5rem;
   transform: rotate(-5deg);
   position: absolute;
   width:110%;
   height: 4rem;
   background-color: #323333;
-  bottom:1.2rem;
+  bottom: 1.2rem;
 }
 
 .bottom_dark_rect{
   z-index: 11;
   position: absolute;
   bottom: 0;
-  width:120%;
+  width: 120%;
   height: 1rem;
   background-color: #323333;
 }
 
 .background_green_dark_rect{
-  left:-2.5rem;
+  left: -2.5rem;
   z-index: 10;
   position: absolute;
   transform: rotate(4.5deg);
-  bottom:-2rem;
-  width:130%;
+  bottom: -2rem;
+  width: 130%;
   height: 4.6rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 19px 0 rgba(0, 0, 0, 0.3);
   background-color: #205050;
 }
 
-/*----------------------------------------------*/
-
-
+/*------------------ Responsive Design ----------------------*/
 @media screen and (max-width: 610px) {
-  .logo_header{
+  .logo_header {
   	position: absolute;
-	top:-12rem;
-}
-.button-wrapper {
-  font-size: .7rem;
-}
+	  top: -12rem;
+  }
+  .button-wrapper {
+    font-size: .7rem;
+  }
 }
