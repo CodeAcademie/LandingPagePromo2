@@ -320,6 +320,7 @@ footer {
   background-color: #00959A;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   bottom:1.2rem;
+  transition: .3s;
 }
 
 .green_dark_rect{
@@ -331,6 +332,7 @@ footer {
   height: 4.5rem;
   background-color: #205050;
   bottom: 1rem;
+  transition: .3s;
 }
 
 .dark_rect {
@@ -342,6 +344,7 @@ footer {
   height: 4rem;
   background-color: #323333;
   bottom: 1.2rem;
+  transition: .3s;
 }
 
 .bottom_dark_rect{
@@ -351,6 +354,7 @@ footer {
   width: 120%;
   height: 1rem;
   background-color: #323333;
+  transition: .3s;
 }
 
 .background_green_dark_rect{
@@ -363,6 +367,23 @@ footer {
   height: 4.6rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 19px 0 rgba(0, 0, 0, 0.3);
   background-color: #205050;
+  transition: .3s;
+}
+
+footer:hover > .green_rect {
+  transform: rotate(0);
+}
+footer:hover > .green_dark_rect {
+  transform: rotate(0);
+}
+footer:hover > .dark_rect {
+  transform: rotate(0);
+}
+footer:hover > .bottom_dark_rect {
+  transform: rotate(0);
+}
+footer:hover > .background_green_dark_rect {
+  transform: rotate(0);
 }
 
 /*------------------ Responsive Design ----------------------*/
