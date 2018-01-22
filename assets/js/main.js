@@ -288,7 +288,7 @@ function populateTheDom(array) {
 		let cvElement = document.createElement('div')
 		cvElement.classList.add('cv')
 		let cvLink = document.createElement('a')
-		cvLink.innerHTML = 'CV'
+		cvLink.innerHTML = 'Curriculum Vitae'
 		cvLink.href = apprenant.cvUrl
 		cvElement.appendChild(cvLink)
 		apprenantElement.appendChild(cvElement)
