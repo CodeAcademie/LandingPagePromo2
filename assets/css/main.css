@@ -116,6 +116,7 @@ nav {
   background-color: #205050;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   bottom: 1.2rem;
+  transition: .3s;
 }
 
 .black_rect_date {
@@ -128,6 +129,7 @@ nav {
   background-color: #323333;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   bottom:1.2rem;
+  transition: .3s;
 }
 
 .rect_date{
@@ -143,9 +145,22 @@ nav {
   background-color: #00959A;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   bottom: 1.2rem;
+  transition: .3s;
 }
 
-.rect_date::after{
+/*.rect_date:hover, .black_rect_date:hover, .dark_rect_date:hover {
+  transform: rotate(0);
+}*/
+
+.box_logo:hover > .black_rect_date {
+  transform: rotate(0deg);
+}
+
+ .box_logo:hover > .rect_date {
+   transform: rotate(0deg);
+ }
+
+/*.rect_date::after{
   transform: rotate(110deg);
   content: "";
   position: absolute;
@@ -156,7 +171,7 @@ nav {
   border-left: 20px solid transparent;
   border-right: 30px solid transparent;
   border-bottom: 100px solid #205050;
-}
+}*/
 
 /*------------------ Main ----------------------*/
 #main {
@@ -181,7 +196,7 @@ nav {
 	border-radius: 100%;
 	overflow: hidden;
 	border: 2px solid #024345;
-	margin: 1em auto;
+	margin: 0 auto 1em;
   opacity: 0;
   background-size: cover;
   background-position: center;
