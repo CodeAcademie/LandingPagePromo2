@@ -42,7 +42,7 @@ nav {
 }
 
 .white_rectangle_nav:after {
-	
+
 
   position: absolute;
   content: " ";
@@ -51,7 +51,7 @@ nav {
   border-top: 3.5rem solid white;
   border-right: 3.5rem solid transparent;
   padding-left:6.6rem;
-  
+
 }
 
 .button-wrapper {
@@ -63,7 +63,7 @@ nav {
 .button {
   display: inline-block;
   margin: 0.5rem 2rem;
-  padding: 1.2rem 2rem;
+  padding: .65rem 2rem;
   color: white;
   background-color: transparent;
   border-radius: 0px 0px 5px 5px;
