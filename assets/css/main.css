@@ -96,7 +96,7 @@ nav {
 
 .logo_header {
   margin-left: 2rem;
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .box_logo {
@@ -146,16 +146,16 @@ nav {
 }
 
 .rect_date::after{
-	transform: rotate(110deg);
-	content: "";
-	position: absolute;
-	width: 0;
-	height: 0;
-  left: 0rem;
-	bottom: -4rem;
-	border-left: 20px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 100px solid #205050;
+  transform: rotate(110deg);
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -4rem;
+  border-left: 20px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid #205050;
 }
 
 /*------------------ Main ----------------------*/
