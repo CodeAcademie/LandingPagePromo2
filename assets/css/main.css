@@ -219,6 +219,7 @@ nav {
 }*/
 
 .name, .portfolio, .cv, .love {
+  position: relative;
 	background-color: #00959A;
 	height: 2rem;
 	border-radius: .3rem;
@@ -234,13 +235,30 @@ nav {
 	transition: .4s;
 }
 
+
 .name::before, .portfolio::before, .cv::before, .love::before {
 	background-color: #024345;
 	width: 1rem;
 	height: 2rem;
 	content: '';
 	float: left;
-	margin-right: .5em;
+  margin-right: .5rem;
+}
+
+.portfolio::before, .cv::before {
+  margin-right: 1rem;
+}
+
+.portfolio::after, .cv::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 1rem;
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-left: .7rem solid #024345;
 }
 
 .portfolio:hover, .cv:hover {
