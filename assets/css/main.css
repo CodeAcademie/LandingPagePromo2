@@ -36,7 +36,7 @@ nav {
 .white_rectangle_nav {
   display: inline-block;
   width:12rem;
-  height: 2.5rem;
+  height: 5rem;
   background-color: white;
 }
 
@@ -45,8 +45,8 @@ nav {
   content: " ";
   width: 0;
   height: 0;
-  border-top: 2.5rem solid white;
-  border-right: 2.5rem solid transparent;
+  border-top: 5rem solid white;
+  border-right: 5rem solid transparent;
   padding-left:6.6rem;
 }
 
