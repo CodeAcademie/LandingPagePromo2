@@ -2,7 +2,7 @@ const arrayApprenant = [
 	{
 		firstname:'Bilane',
 		lastname:'Abdi Djama',
-		photoUrl:'',
+		photoUrl:'assets/photo/bilaneAbdiDjama.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -11,7 +11,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jessica',
 		lastname:'Anschutz',
-		photoUrl:'',
+		photoUrl:'assets/photo/jessicaAnschutz.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -20,7 +20,7 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Beauverger',
-		photoUrl:'',
+		photoUrl:'assets/photo/alexandreBeauverger.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -29,7 +29,7 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Bouttier',
-		photoUrl:'',
+		photoUrl:'assets/photo/alexandreBouttier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -38,7 +38,7 @@ const arrayApprenant = [
 	{
 		firstname:'Marine',
 		lastname:'Cormier',
-		photoUrl:'',
+		photoUrl:'assets/photo/marineCormier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -47,7 +47,7 @@ const arrayApprenant = [
 	{
 		firstname:'Delcourt',
 		lastname:'Déborah',
-		photoUrl:'',
+		photoUrl:'assets/photo/deborahDelcourt.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -56,7 +56,7 @@ const arrayApprenant = [
 	{
 		firstname:'Vassily',
 		lastname:'Dubois',
-		photoUrl:'',
+		photoUrl:'assets/photo/vassilyDubois.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -65,7 +65,7 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Douard',
-		photoUrl:'',
+		photoUrl:'assets/photo/alexandreDouard.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -74,7 +74,7 @@ const arrayApprenant = [
 	{
 		firstname:'Mhamed',
 		lastname:'El haddioui',
-		photoUrl:'',
+		photoUrl:'assets/photo/mhamedElhaddioui.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -83,7 +83,7 @@ const arrayApprenant = [
 	{
 		firstname:'Roxane',
 		lastname:'Gervais',
-		photoUrl:'',
+		photoUrl:'assets/photo/roxaneGervais.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -92,7 +92,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jean-Claude',
 		lastname:'Grondin',
-		photoUrl:'',
+		photoUrl:'assets/photo/jeanClaudeGrondin.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -101,7 +101,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jonathan',
 		lastname:'Guillou',
-		photoUrl:'',
+		photoUrl:'assets/photo/jonathanGuillou.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -110,7 +110,7 @@ const arrayApprenant = [
 	{
 		firstname:'Léa',
 		lastname:'Hennebert',
-		photoUrl:'',
+		photoUrl:'assets/photo/leaHennebert.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -119,7 +119,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benoit',
 		lastname:'Laurent',
-		photoUrl:'',
+		photoUrl:'assets/photo/benoitLaurent.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -128,7 +128,7 @@ const arrayApprenant = [
 	{
 		firstname:'Carole',
 		lastname:'Le Roux',
-		photoUrl:'',
+		photoUrl:'assets/photo/caroleLeRoux.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -137,7 +137,7 @@ const arrayApprenant = [
 	{
 		firstname:'Eliez',
 		lastname:'Maigné',
-		photoUrl:'',
+		photoUrl:'assets/photo/eliezMaigne.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -146,7 +146,7 @@ const arrayApprenant = [
 	{
 		firstname:'François',
 		lastname:'Massiot',
-		photoUrl:'',
+		photoUrl:'assets/photo/francoisMassiot.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -155,7 +155,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benjamin',
 		lastname:'Mellec',
-		photoUrl:'',
+		photoUrl:'assets/photo/benjaminMellec.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -164,7 +164,7 @@ const arrayApprenant = [
 	{
 		firstname:'Claudia',
 		lastname:'Mendoza',
-		photoUrl:'',
+		photoUrl:'assets/photo/claudiaMendoza.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -173,7 +173,7 @@ const arrayApprenant = [
 	{
 		firstname:'Régis',
 		lastname:'Nicolo',
-		photoUrl:'',
+		photoUrl:'assets/photo/regisNicolo.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -182,7 +182,7 @@ const arrayApprenant = [
 	{
 		firstname:'Olivier',
 		lastname:'Romer',
-		photoUrl:'',
+		photoUrl:'assets/photo/olivierRomer.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -191,7 +191,7 @@ const arrayApprenant = [
 	{
 		firstname:'Florian',
 		lastname:'Rouxel',
-		photoUrl:'',
+		photoUrl:'assets/photo/florianRouxel.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -200,7 +200,7 @@ const arrayApprenant = [
 	{
 		firstname:'Romain',
 		lastname:'Seite',
-		photoUrl:'',
+		photoUrl:'assets/photo/romainSeite.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
