@@ -252,7 +252,7 @@ function populateTheDom(array) {
 	while (mainElement.lastChild) {
 		mainElement.removeChild(mainElement.lastChild)
 	}
-
+	let i = 0;
 	array.forEach(function(apprenant){
 		let apprenantWrapper = document.createElement('div')
 		apprenantWrapper.classList.add('apprenant-wrapper')
@@ -302,6 +302,25 @@ function populateTheDom(array) {
 		apprenantElement.appendChild(descElement)
 
 		mainElement.appendChild(apprenantWrapper)
+
+		// Add animation classes
+		setTimeout(function(){
+			photoElement.classList.add('animation-photo')
+		}, i * 600);
+		setTimeout(function(){
+			nameElement.classList.add('animation-default')
+		}, i * 600 + 400);
+		setTimeout(function(){
+			portfolioElement.classList.add('animation-default')
+		}, i * 600 + 600);
+		setTimeout(function(){
+			cvElement.classList.add('animation-default')
+		}, i * 600 + 800);
+		setTimeout(function(){
+			loveElement.classList.add('animation-default')
+		}, i * 600 + 1000);
+		i++;
+
 	});
 }
 populateTheDom(arrayApprenant)

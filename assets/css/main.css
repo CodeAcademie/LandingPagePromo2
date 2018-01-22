@@ -182,6 +182,7 @@ nav {
 	overflow: hidden;
 	border: 2px solid #024345;
 	margin: 1em auto;
+  opacity: 0;
   background-size: cover;
   background-position: center;
   transition: .4s;
@@ -203,6 +204,7 @@ nav {
 	font-family: sans-serif;
 	box-shadow: 2px 2px 6px #a8a8a8;
 	padding-right: .5em;
+  opacity: 0;
 	font-family: 'Roboto', sans-serif;
 	transition: .2s;
 }
@@ -244,6 +246,46 @@ a {
   opacity: 0;
 }
 
+.animation-default {
+  opacity: 1;
+  animation: animate-default .8s;
+  transition: .4s;
+}
+
+.animation-photo {
+  animation: animate-photo .8s;
+  opacity: 1;
+}
+
+@keyframes animate-default {
+  0%{
+    transform: translate(-100px, 0);
+  }
+  30%{
+    transform: translate(+25px, 0);
+  }
+  75%{
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+@keyframes animate-photo {
+  0% {
+    transform: scale(0.1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  65% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*----------------------Footer---------------------*/
 footer {
   position: relative;
@@ -309,6 +351,18 @@ footer {
 }
 
 /*------------------ Responsive Design ----------------------*/
+@media screen and (max-width: 1000px) {
+  #main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 610px) {
   .logo_header {
   	position: absolute;
@@ -318,3 +372,15 @@ footer {
     font-size: .7rem;
   }
 }
+
+@media screen and (max-width: 530px) {
+  #main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*
+@media screen and (max-width: 400px) {
+  #main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}*/
