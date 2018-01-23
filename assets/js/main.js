@@ -29,9 +29,9 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Bouttier',
-		photoUrl:'',
-		cvUrl: '',
-		portfolioUrl:'',
+		photoUrl:'https://alexandrebouttier.github.io/Portfolio/images/Alexandre-Bouttier.png',
+		cvUrl: 'https://github.com/alexandrebouttier/Portfolio/blob/master/files/CV.pdf',
+		portfolioUrl:'https://alexandrebouttier.github.io/Portfolio',
 		desc:'',
 		love:'',
 	},
