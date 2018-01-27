@@ -68,7 +68,7 @@ const arrayApprenant = [
 		photoUrl:'https://github.com/DouardAlexandre/cvphoto/blob/master/photo.png?raw=true',
 		cvUrl: 'https://github.com/DouardAlexandre/cvphoto/blob/master/AlexandreDouard.pdf',
 		portfolioUrl:'https://douardalexandre.github.io/porfolio/',
-		desc:'',
+		desc:'Je suis Alexandre, j\'aime les nouvelles technologies et les sciences.Dans mon expérience du graphisme et plus tard, du commerce, j\'ai toujours recherché la plus simple et la plus efficace façon de répondre au besoin de l\'utilisateur ou du client, tout en privilégiant une créativitée épurée.',
 		love:'',
 	},
 	{
