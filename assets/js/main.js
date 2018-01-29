@@ -2,7 +2,7 @@ const arrayApprenant = [
 	{
 		firstname:'Bilane',
 		lastname:'Abdi Djama',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/bilane.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -11,7 +11,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jessica',
 		lastname:'Anschutz',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/jessica.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -20,7 +20,7 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Beauverger',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/alexandre-beauverger.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -38,7 +38,7 @@ const arrayApprenant = [
 	{
 		firstname:'Marine',
 		lastname:'Cormier',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/marine-cormier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -47,7 +47,7 @@ const arrayApprenant = [
 	{
 		firstname:'Delcourt',
 		lastname:'Déborah',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/déborah.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -56,7 +56,7 @@ const arrayApprenant = [
 	{
 		firstname:'Vassily',
 		lastname:'Dubois',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/vassily.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -74,7 +74,7 @@ const arrayApprenant = [
 	{
 		firstname:'Mhamed',
 		lastname:'El haddioui',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/mhamed.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -83,7 +83,7 @@ const arrayApprenant = [
 	{
 		firstname:'Roxane',
 		lastname:'Gervais',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/roxanne.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -92,7 +92,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jean-Claude',
 		lastname:'Grondin',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/jean-claude.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -101,7 +101,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jonathan',
 		lastname:'Guillou',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/jonathan.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -110,7 +110,7 @@ const arrayApprenant = [
 	{
 		firstname:'Léa',
 		lastname:'Hennebert',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/lea.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -119,7 +119,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benoit',
 		lastname:'Laurent',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/benoit.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -128,7 +128,7 @@ const arrayApprenant = [
 	{
 		firstname:'Carole',
 		lastname:'Le Roux',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/carole.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -137,7 +137,7 @@ const arrayApprenant = [
 	{
 		firstname:'Eliez',
 		lastname:'Maigné',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/eliez.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -146,7 +146,7 @@ const arrayApprenant = [
 	{
 		firstname:'François',
 		lastname:'Massiot',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/françois.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -155,7 +155,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benjamin',
 		lastname:'Mellec',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/benjamin.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -164,7 +164,7 @@ const arrayApprenant = [
 	{
 		firstname:'Claudia',
 		lastname:'Mendoza',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/claudia.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -173,7 +173,7 @@ const arrayApprenant = [
 	{
 		firstname:'Régis',
 		lastname:'Nicolo',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/regis.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -182,7 +182,7 @@ const arrayApprenant = [
 	{
 		firstname:'Olivier',
 		lastname:'Romer',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/olivier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -191,7 +191,7 @@ const arrayApprenant = [
 	{
 		firstname:'Florian',
 		lastname:'Rouxel',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/florian.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -200,7 +200,7 @@ const arrayApprenant = [
 	{
 		firstname:'Romain',
 		lastname:'Seite',
-		photoUrl:'',
+		photoUrl:'assets/img/photos/romain-seite.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
