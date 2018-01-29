@@ -2,7 +2,7 @@ const arrayApprenant = [
 	{
 		firstname:'Bilane',
 		lastname:'Abdi Djama',
-		photoUrl:'assets/img/photos/bilane.jpg',
+		photoUrl:'assets/img/photos/small/bilane.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -11,7 +11,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jessica',
 		lastname:'Anschutz',
-		photoUrl:'assets/img/photos/jessica.jpg',
+		photoUrl:'assets/img/photos/small/jessica.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -20,7 +20,7 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Beauverger',
-		photoUrl:'assets/img/photos/alexandre-beauverger.jpg',
+		photoUrl:'assets/img/photos/small/alexandre-beauverger.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -38,7 +38,7 @@ const arrayApprenant = [
 	{
 		firstname:'Marine',
 		lastname:'Cormier',
-		photoUrl:'assets/img/photos/marine-cormier.jpg',
+		photoUrl:'assets/img/photos/small/marine-cormier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -47,7 +47,7 @@ const arrayApprenant = [
 	{
 		firstname:'Delcourt',
 		lastname:'Déborah',
-		photoUrl:'assets/img/photos/déborah.jpg',
+		photoUrl:'assets/img/photos/small/déborah.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -56,7 +56,7 @@ const arrayApprenant = [
 	{
 		firstname:'Vassily',
 		lastname:'Dubois',
-		photoUrl:'assets/img/photos/vassily.jpg',
+		photoUrl:'assets/img/photos/small/vassily.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -74,7 +74,7 @@ const arrayApprenant = [
 	{
 		firstname:'Mhamed',
 		lastname:'El haddioui',
-		photoUrl:'assets/img/photos/mhamed.jpg',
+		photoUrl:'assets/img/photos/small/mhamed.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -83,7 +83,7 @@ const arrayApprenant = [
 	{
 		firstname:'Roxane',
 		lastname:'Gervais',
-		photoUrl:'assets/img/photos/roxanne.jpg',
+		photoUrl:'assets/img/photos/small/roxanne.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -92,7 +92,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jean-Claude',
 		lastname:'Grondin',
-		photoUrl:'assets/img/photos/jean-claude.jpg',
+		photoUrl:'assets/img/photos/small/jean-claude.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -101,7 +101,7 @@ const arrayApprenant = [
 	{
 		firstname:'Jonathan',
 		lastname:'Guillou',
-		photoUrl:'assets/img/photos/jonathan.jpg',
+		photoUrl:'assets/img/photos/small/jonathan.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -110,7 +110,7 @@ const arrayApprenant = [
 	{
 		firstname:'Léa',
 		lastname:'Hennebert',
-		photoUrl:'assets/img/photos/lea.jpg',
+		photoUrl:'assets/img/photos/small/lea.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -119,7 +119,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benoit',
 		lastname:'Laurent',
-		photoUrl:'assets/img/photos/benoit.jpg',
+		photoUrl:'assets/img/photos/small/benoit.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -128,7 +128,7 @@ const arrayApprenant = [
 	{
 		firstname:'Carole',
 		lastname:'Le Roux',
-		photoUrl:'assets/img/photos/carole.jpg',
+		photoUrl:'assets/img/photos/small/carole.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -137,7 +137,7 @@ const arrayApprenant = [
 	{
 		firstname:'Eliez',
 		lastname:'Maigné',
-		photoUrl:'assets/img/photos/eliez.jpg',
+		photoUrl:'assets/img/photos/small/eliez.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -146,7 +146,7 @@ const arrayApprenant = [
 	{
 		firstname:'François',
 		lastname:'Massiot',
-		photoUrl:'assets/img/photos/françois.jpg',
+		photoUrl:'assets/img/photos/small/françois.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -155,7 +155,7 @@ const arrayApprenant = [
 	{
 		firstname:'Benjamin',
 		lastname:'Mellec',
-		photoUrl:'assets/img/photos/benjamin.jpg',
+		photoUrl:'assets/img/photos/small/benjamin.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -164,7 +164,7 @@ const arrayApprenant = [
 	{
 		firstname:'Claudia',
 		lastname:'Mendoza',
-		photoUrl:'assets/img/photos/claudia.jpg',
+		photoUrl:'assets/img/photos/small/claudia.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -173,7 +173,7 @@ const arrayApprenant = [
 	{
 		firstname:'Régis',
 		lastname:'Nicolo',
-		photoUrl:'assets/img/photos/regis.jpg',
+		photoUrl:'assets/img/photos/small/regis.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -182,7 +182,7 @@ const arrayApprenant = [
 	{
 		firstname:'Olivier',
 		lastname:'Romer',
-		photoUrl:'assets/img/photos/olivier.jpg',
+		photoUrl:'assets/img/photos/small/olivier.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -191,7 +191,7 @@ const arrayApprenant = [
 	{
 		firstname:'Florian',
 		lastname:'Rouxel',
-		photoUrl:'assets/img/photos/florian.jpg',
+		photoUrl:'assets/img/photos/small/florian.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
@@ -200,7 +200,7 @@ const arrayApprenant = [
 	{
 		firstname:'Romain',
 		lastname:'Seite',
-		photoUrl:'assets/img/photos/romain-seite.jpg',
+		photoUrl:'assets/img/photos/small/romain-seite.jpg',
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
