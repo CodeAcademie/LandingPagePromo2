@@ -201,10 +201,10 @@ const arrayApprenant = [
 		firstname:'Romain',
 		lastname:'Seite',
 		photoUrl:'assets/img/photos/small/romain-seite.jpg',
-		cvUrl: '',
-		portfolioUrl:'',
+		cvUrl: 'assets/cv/romain.pdf',
+		portfolioUrl:'https://saromase.github.io/portfolio',
 		desc:'',
-		love:'',
+		love:'Php, Laravel',
 	},
 ];
 
@@ -220,7 +220,7 @@ const arrayApprenant = [
 let randomButton = document.getElementById('random')
 let promotionButton = document.getElementById('promotion')
 let mainElement = document.getElementById('main');
-let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+//let lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 
 // Smooth scroll
 let scroll = new SmoothScroll('a[href*="#"]', {
@@ -281,7 +281,7 @@ function populateTheDom(array) {
 		portfolioElement.classList.add('portfolio')
 		let portfolioLink = document.createElement('a')
 		portfolioLink.innerHTML = 'Portfolio'
-		portfolioLink.href = apprenant.portfolioUrl
+		!apprenant.portfolioUrl ? portfolioElement.classList.add('disable') : portfolioLink.href = apprenant.portfolioUrl
 		portfolioElement.appendChild(portfolioLink)
 		apprenantElement.appendChild(portfolioElement)
 
@@ -289,7 +289,7 @@ function populateTheDom(array) {
 		cvElement.classList.add('cv')
 		let cvLink = document.createElement('a')
 		cvLink.innerHTML = 'Curriculum Vitae'
-		cvLink.href = apprenant.cvUrl
+		!apprenant.cvUrl ? cvElement.classList.add('disable') : cvLink.href = apprenant.cvUrl
 		cvElement.appendChild(cvLink)
 		apprenantElement.appendChild(cvElement)
 
@@ -300,7 +300,7 @@ function populateTheDom(array) {
 
 		let descElement = document.createElement('div')
 		descElement.classList.add('desc')
-		descElement.innerHTML = apprenant.desc || lorem
+		descElement.innerHTML = apprenant.desc || '' 
 		apprenantElement.appendChild(descElement)
 
 		mainElement.appendChild(apprenantWrapper)

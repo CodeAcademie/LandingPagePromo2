@@ -234,6 +234,12 @@ nav {
 	font-family: 'Roboto', sans-serif;
 	transition: .4s;
 }
+.disable:visited,
+.disable:link,
+.disable {
+  background:#cccccc;
+  cursor:not-allowed;
+}
 
 
 .name::before, .portfolio::before, .cv::before, .love::before {
@@ -260,11 +266,19 @@ nav {
   border-bottom: 1rem solid transparent;
   border-left: .7rem solid #024345;
 }
-
+.disable::before {
+  background:#666666;
+}
+.disable::after {
+  border-left:.7rem solid #666666;
+}
 .portfolio:hover, .cv:hover {
 	background-color: #F4A733;
 }
-
+.disable:focus,
+.disable:hover {
+  background:#cccccc;
+}
 a {
 	text-decoration: none;
 	color: white;
