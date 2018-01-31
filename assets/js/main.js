@@ -15,7 +15,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'Happiness Manager !',
 	},
 	{
 		firstname:'Alexandre',
@@ -24,7 +24,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Big Data !',
 	},
 	{
 		firstname:'Alexandre',
@@ -42,17 +42,17 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 BDD !',
 	},
-	{
-		firstname:'Delcourt',
-		lastname:'Déborah',
-		photoUrl:'assets/img/photos/small/déborah.jpg',
-		cvUrl: '',
-		portfolioUrl:'',
-		desc:'',
-		love:'',
-	},
+	// {
+	// 	firstname:'Delcourt',
+	// 	lastname:'Déborah',
+	// 	photoUrl:'assets/img/photos/small/déborah.jpg',
+	// 	cvUrl: '',
+	// 	portfolioUrl:'',
+	// 	desc:'',
+	// 	love:'',
+	// },
 	{
 		firstname:'Vassily',
 		lastname:'Dubois',
@@ -60,7 +60,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Algorithmie Génétique !',
 	},
 	{
 		firstname:'Alexandre',
@@ -68,8 +68,8 @@ const arrayApprenant = [
 		photoUrl:'https://github.com/DouardAlexandre/cvphoto/blob/master/photo.png?raw=true',
 		cvUrl: 'https://github.com/DouardAlexandre/cvphoto/blob/master/AlexandreDouard.pdf',
 		portfolioUrl:'https://douardalexandre.github.io/porfolio/',
-		desc:'Je suis Alexandre, j\'aime les nouvelles technologies et les sciences.Dans mon expérience du graphisme et plus tard, du commerce, j\'ai toujours recherché la plus simple et la plus efficace façon de répondre au besoin de l\'utilisateur ou du client, tout en privilégiant une créativitée épurée.',
-		love:'',
+		desc:'J\'aime les nouvelles technologies et les sciences. Dans mon expérience du graphisme et du commerce, j\'ai toujours recherché la plus simple et la plus efficace façon de répondre au besoin du client, tout en privilégiant une créativitée épurée.',
+		love:'<3 Sciences !',
 	},
 	{
 		firstname:'Mhamed',
@@ -78,7 +78,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Python !',
 	},
 	{
 		firstname:'Roxane',
@@ -96,7 +96,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Tajines !',
 	},
 	{
 		firstname:'Jonathan',
@@ -114,16 +114,16 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 React-Native !',
 	},
 	{
 		firstname:'Benoit',
 		lastname:'Laurent',
-		photoUrl:'assets/img/photos/small/benoit.jpg',
-		cvUrl: '',
+		photoUrl:'assets/img/photos/benoitLAURENT.jpg',
+		cvUrl: 'assets/cv/CV_Benoit_Laurent.pdf',
 		portfolioUrl:'',
-		desc:'',
-		love:'',
+		desc:'Autodidacte et passionné, je suis à la recherche de nouvelles aventures dans le monde du développement et de la programmation!',
+		love:'<3 JavaScript !',
 	},
 	{
 		firstname:'Carole',
@@ -141,7 +141,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Dota2 !',
 	},
 	{
 		firstname:'François',
@@ -159,7 +159,7 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Rocket League !',
 	},
 	{
 		firstname:'Claudia',
@@ -177,17 +177,17 @@ const arrayApprenant = [
 		cvUrl: '',
 		portfolioUrl:'',
 		desc:'',
-		love:'',
+		love:'<3 Wordpress !',
 	},
-	{
-		firstname:'Olivier',
-		lastname:'Romer',
-		photoUrl:'assets/img/photos/small/olivier.jpg',
-		cvUrl: '',
-		portfolioUrl:'',
-		desc:'',
-		love:'',
-	},
+	// {
+	// 	firstname:'Olivier',
+	// 	lastname:'Romer',
+	// 	photoUrl:'assets/img/photos/small/olivier.jpg',
+	// 	cvUrl: '',
+	// 	portfolioUrl:'',
+	// 	desc:'',
+	// 	love:'',
+	// },
 	{
 		firstname:'Florian',
 		lastname:'Rouxel',
@@ -204,18 +204,9 @@ const arrayApprenant = [
 		cvUrl: 'assets/cv/romain.pdf',
 		portfolioUrl:'https://saromase.github.io/portfolio',
 		desc:'',
-		love:'Php, Laravel',
+		love:'<3 PHP, Laravel !',
 	},
 ];
-
-// function Apprenant (firstname, lastname, photoUrl, cvUrl, portfolioUrl, desc ) {
-// 	this.firstname = firstname
-// 	this.lastname = lastname
-// 	this.photoUrl = photoUrl
-// 	this.cvUrl = cvUrl
-// 	this.portfolioUrl = porfolioUrl
-// 	this.desc = desc
-// }
 
 let randomButton = document.getElementById('random')
 let promotionButton = document.getElementById('promotion')
@@ -235,12 +226,9 @@ function shuffle(array) {
   let currentIndex = array.length,
 			temporaryValue,
 			randomIndex;
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -265,12 +253,12 @@ function populateTheDom(array) {
 
 		let photoElement = document.createElement('div')
 		photoElement.classList.add('photo')
-		// let photoImg = document.createElement('img')
-		// photoImg.src = apprenant.photoUrl || 'https://lorempixel.com/640/400/people/' + Math.floor(Math.random()*10)
-		// photoElement.appendChild(photoImg)
-		let imgUrl = apprenant.photoUrl || 'https://lorempixel.com/640/400/people/' + Math.floor(Math.random()*10)
+		!apprenant.desc ? photoElement.classList.add('photo') : photoElement.classList.add('photo', 'has-desc')
+		let imgUrl = apprenant.photoUrl
 		photoElement.style.backgroundImage = 'url('+ imgUrl +')'
 		apprenantElement.appendChild(photoElement)
+
+
 
 		let nameElement = document.createElement('div')
 		nameElement.classList.add('name')
@@ -280,6 +268,7 @@ function populateTheDom(array) {
 		let portfolioElement = document.createElement('div')
 		portfolioElement.classList.add('portfolio')
 		let portfolioLink = document.createElement('a')
+		portfolioLink.target = '_blank'
 		portfolioLink.innerHTML = 'Portfolio'
 		!apprenant.portfolioUrl ? portfolioElement.classList.add('disable') : portfolioLink.href = apprenant.portfolioUrl
 		portfolioElement.appendChild(portfolioLink)
@@ -288,6 +277,7 @@ function populateTheDom(array) {
 		let cvElement = document.createElement('div')
 		cvElement.classList.add('cv')
 		let cvLink = document.createElement('a')
+		cvLink.target = '_blank'
 		cvLink.innerHTML = 'Curriculum Vitae'
 		!apprenant.cvUrl ? cvElement.classList.add('disable') : cvLink.href = apprenant.cvUrl
 		cvElement.appendChild(cvLink)
@@ -300,7 +290,7 @@ function populateTheDom(array) {
 
 		let descElement = document.createElement('div')
 		descElement.classList.add('desc')
-		descElement.innerHTML = apprenant.desc || '' 
+		descElement.innerHTML = apprenant.desc
 		apprenantElement.appendChild(descElement)
 
 		mainElement.appendChild(apprenantWrapper)

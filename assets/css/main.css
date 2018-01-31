@@ -16,8 +16,6 @@ body {
   overflow-x:hidden;
 }
 
-
-
 /*------------------ Header ----------------------*/
 nav {
   z-index: 100;
@@ -234,13 +232,13 @@ nav {
 	font-family: 'Roboto', sans-serif;
 	transition: .4s;
 }
+
 .disable:visited,
 .disable:link,
 .disable {
   background:#cccccc;
-  cursor:not-allowed;
+  cursor: default;
 }
-
 
 .name::before, .portfolio::before, .cv::before, .love::before {
 	background-color: #024345;
@@ -266,19 +264,24 @@ nav {
   border-bottom: 1rem solid transparent;
   border-left: .7rem solid #024345;
 }
+
 .disable::before {
-  background:#666666;
+  background: #666666;
 }
+
 .disable::after {
-  border-left:.7rem solid #666666;
+  border-left: .7rem solid #666666;
 }
+
 .portfolio:hover, .cv:hover {
 	background-color: #F4A733;
 }
+
 .disable:focus,
 .disable:hover {
   background:#cccccc;
 }
+
 a {
 	text-decoration: none;
 	color: white;
@@ -288,19 +291,19 @@ a {
 	pointer-events: none;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
   left: 0;
   opacity: 0;
 	transition: .4s;
 }
 
-.photo:hover ~ .desc {
+.has-desc:hover ~ .desc {
   opacity: 1;
 	display: block;
 }
 
-.photo:hover {
+.has-desc:hover {
   opacity: 0;
 }
 
@@ -351,17 +354,18 @@ footer {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   bottom: 0rem;
 }
 
 .green_rect {
   z-index: 9;
   left: -.5rem;
+  transform-origin: top;
   transform: rotate(4.5deg);
   position: absolute;
   width: 110%;
-  height: 4rem;
+  height: 5.5rem;
   background-color: #00959A;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   bottom:1.2rem;
@@ -370,11 +374,12 @@ footer {
 
 .green_dark_rect{
   z-index: 8;
+  transform-origin: top;
   transform: rotate(-1.5deg);
   position: absolute;
   left: -.5rem;
   width: 120%;
-  height: 4.5rem;
+  height: 5rem;
   background-color: #205050;
   bottom: 1rem;
   transition: .3s;
@@ -383,7 +388,8 @@ footer {
 .dark_rect {
   z-index: 6;
   left: -.5rem;
-  transform: rotate(-5deg);
+  transform-origin: top;
+  transform: rotate(-6deg);
   position: absolute;
   width:110%;
   height: 4rem;
@@ -392,13 +398,17 @@ footer {
   transition: .3s;
 }
 
-.bottom_dark_rect{
+.bottom_dark_rect {
   z-index: 11;
   position: absolute;
   bottom: 0;
-  width: 120%;
+  width: 100%;
   height: 1rem;
+  padding: 1rem;
   background-color: #323333;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 19px 0 rgba(0, 0, 0, 0.3);
   transition: .3s;
 }
 
@@ -406,10 +416,11 @@ footer {
   left: -2.5rem;
   z-index: 10;
   position: absolute;
+  transform-origin: top;
   transform: rotate(4.5deg);
   bottom: -2rem;
   width: 130%;
-  height: 4.6rem;
+  height: 6rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1), 0 0 19px 0 rgba(0, 0, 0, 0.3);
   background-color: #205050;
   transition: .3s;
