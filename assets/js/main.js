@@ -103,9 +103,9 @@ const arrayApprenant = [
 		lastname:'Guillou',
 		photoUrl:'assets/img/photos/small/jonathan.jpg',
 		cvUrl: 'assets/cv/CV_Jonathan_GUILLOU.pdf',
-		portfolioUrl:'https://github.com/jonathanGuillou',
-		desc:'',
-		love:'',
+		portfolioUrl:'https://jonathanguillou.github.io/Portfolio',
+		desc:'Ma passion grandissant, le numérique est devenu mon nouveau terrain de jeu après une 1ère carrière comme sportif haut niveau',
+		love:'<3 JavaScript, PHP',
 	},
 	{
 		firstname:'Léa',
