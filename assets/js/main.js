@@ -29,11 +29,11 @@ const arrayApprenant = [
 	{
 		firstname:'Alexandre',
 		lastname:'Bouttier',
-		photoUrl:'https://alexandrebouttier.github.io/Portfolio/images/Alexandre-Bouttier.png',
-		cvUrl: 'https://github.com/alexandrebouttier/Portfolio/blob/master/files/CV.pdf',
-		portfolioUrl:'https://alexandrebouttier.github.io/Portfolio',
-		desc:'',
-		love:'',
+		photoUrl:'assets/img/photos/small/Alexandre-Bouttier.png',
+		cvUrl: 'assets/cv/CV_Alexandre_Bouttier.pdf',
+		portfolioUrl:'http://www.alexandrebouttier.fr',
+		desc:'Je suis quelqu\'un de curieux , j\'aime expérimenter , découvrir et apprendre au fûr et à mesure de mes projets ',
+		love:'<3 Intégration !',
 	},
 	{
 		firstname:'Marine',
