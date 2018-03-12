@@ -31,9 +31,9 @@ const arrayApprenant = [
 		lastname:'Bouttier',
 		photoUrl:'assets/img/photos/small/Alexandre-Bouttier.png',
 		cvUrl: 'assets/cv/CV_Alexandre_Bouttier.pdf',
-		portfolioUrl:'http://www.alexandrebouttier.fr',
+		portfolioUrl:'https://www.alexandrebouttier.fr',
 		desc:'Je suis quelqu\'un de curieux , j\'aime expérimenter , découvrir et apprendre au fûr et à mesure de mes projets ',
-		love:'<3 Intégration !',
+		love:'<3 Front-end !',
 	},
 	{
 		firstname:'Marine',
